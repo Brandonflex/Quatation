@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Customer Quotation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="float-button">
+        <button id="button" onclick="window.print()"> <i class="fa fa-download fa-lg"  style="color: aliceblue;" aria-hidden="true" ></i></button>
+    </div>
+    <div class="wrapper">
+        <div class="logo-wrapper">
+            <img src="https://onepayclick.vercel.app/_nuxt/img/logo.b82b42b.png" alt="logo" class="logo">
+        </div>
+        <br/>
+        <div class="text-container">
+            <h1>Loan Quotation</h1>
+            <p>Ref ID: <input type="text" placeholder="@@refId"></p>
+        </div>
+        <div class="head-flex">
+            <div class="text-container2">
+                <p>Billed To:</p>
+                <p><input type="text" placeholder="@@customerName"></p>
+                <p><input type="text" placeholder="@@phoneNumber"></p>
+            </div>
+            <div class="text-container2">
+                <p>Loan Type: <input type="text" placeholder="@@loanType"></p>
+                <p>Period: <input type="text" placeholder="@@loanPeriod"></p>
+                <p>Estimate Date: <input type="text" placeholder="@@customerName"></p>
+                <p>Expiry Date: <input type="text" placeholder="@@phoneNumber"></p>
+
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Item Description</th>
+                <th>Amount</th>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Desired Amount</td>
+                <td>@@desiredAmount</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Interest</td>
+                <td>@@interest</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Monthly Installment</td>
+                <td>@@monthlyInstallment</td>
+            </tr>
+
+        </table>
+        <br>
+        <p>A one off tracking fee of KES 20,000 or monthly installment of KES 3,000 is also incurred</p>
+        <table>
+            <tr>
+                <th>First Installment</th>
+                <th>Last Installment</th>
+            </tr>
+            <tr>
+                <td>@@firstInstallment</td>
+                <td>@@lastInstallment</td>
+            </tr>
+        </table>
+        <div>
+            <br>
+            <div class="t-container">
+                <div class="flex-container">
+                    <h4>Checklist</h4>
+                    <ul>
+                        <li>
+                            <p>Original Logbook</p>
+                        </li>
+                        <li>
+                            <p>Original ID</p>
+                        </li>
+                        <li>
+                            <p>KRA PIN</p>
+                        </li>
+                        <li>
+                            <p>Comprehensive Insurance</p>
+                        </li>
+                        <li>
+                            <p>6 months Bank<span>Statements</span></p>
+                            <li>6 months Mpesa<span>Statements</span>
+                            </li>
+                            <li>Post Dated Cheques</li>
+                    </ul>
+                </div>
+                <div class="flex-container">
+                    <h4>How to apply</h4>
+                    <ul>
+                        <li>Dial *483*404#</li>
+                        <li>Select Apply for Loan</li>
+                        <li>Follow the prompts</li>
+                    </ul>
+                    <br>
+                    <p>Terms and Conditions Apply</p>
+                    <br>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+</body>
+
+</html>
